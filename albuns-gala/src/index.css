@@ -9,19 +9,22 @@
     padding: 0px;
     box-sizing: border-box;
     color: white;
+    
 }
 
-
+div#root {
+    background-color: rgba(0, 0, 0, 0.664);
+}
 
 p {
     color: #A1A1AA;
 }
 
 body, html {
-    
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.493);
+    
     font-family: 'Inter', system-ui;
+    
 }
 
 header {
@@ -30,9 +33,21 @@ header {
     padding: 20px 15px;
     background-color: black;
     color: white;
-    gap: 30px;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-around;
 }
 
+div.brand {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    
+}
+
+header > div > img {
+    border-radius: 50%;
+}
 
 main {
     max-width: 650px;
@@ -40,6 +55,7 @@ main {
     margin: 32px auto;
     display: grid;
     gap: 24px;
+    
 }
 
 
@@ -48,6 +64,8 @@ section {
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding-top: 4px;
     border-radius: 10px;
+    margin-bottom: 50px;
+    
 }
 
 section div {
@@ -76,6 +94,14 @@ ul.albuns img {
 section.last {
     height: 300px;
     margin-bottom: 90px;
+}
+
+header div img {
+    transition: transform .3s;
+}
+
+header div img:hover {
+    transform: scale(1.1);
 }
 
 section ul li {

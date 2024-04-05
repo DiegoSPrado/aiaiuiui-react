@@ -18,7 +18,7 @@ const artistList = [
   ,
   {
      url:"https://open.spotify.com/intl-pt/artist/4V8LLVI7PbaPR0K2TGSxFF?si=lNV9-raoTb6rc_jDUtDYrg", 
-     ImageInt:"https://s2-gq.glbimg.com/ueib4QHcVqluVXCHh2zrGXVAvUM=/0x0:3305x2697/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_71a8fe14ac6d40bd993eb59f7203fe6f/internal_photos/bs/2023/d/K/Sg1ZT3Qjy5FntJ87eoBQ/tyler-creator-gq.jpg",
+     ImageInt:"/imgs/tyler-cr.jpg",
      alt:"Imagem do artista Tyler, the Creator",
   }             
    ,
