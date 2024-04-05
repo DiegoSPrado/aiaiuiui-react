@@ -4,7 +4,7 @@ export default function Section(props) {
         <div>
             <h2>{props.title}</h2>
             <p>{props.subtitle}</p>
-            <ul className="albuns">
+            <ul className={props.className}>
               {/* Itens da Lista */}
                {props.children} 
             </ul>

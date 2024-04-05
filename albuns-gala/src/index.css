@@ -2,18 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-@media screen {
+
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: white;
 }
 
-h2 {
-    color: white;
-    padding-bottom: 10px;
-}
+
 
 p {
     color: #A1A1AA;
@@ -22,16 +20,9 @@ p {
 body, html {
     
     height: 100vh;
-    background-color: rosybrown;
+    background-color: rgba(0, 0, 0, 0.493);
     font-family: 'Inter', system-ui;
 }
-
-main {
-    display: grid;
-    gap: 24px;
-}
-
-
 
 header {
     display: flex;
@@ -42,27 +33,28 @@ header {
     gap: 30px;
 }
 
-header a {
-    color: white;
-    
-    
+
+main {
+    max-width: 650px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
 }
 
 
-section{
-    display: block;
-    width: 80vw;
-    height: 60vh;
-    margin: auto;
-    margin-top: 50px;
-    background-color: #2A2634;
-    border-radius: 15px;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.541);
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
 }
 
 section div {
-   text-align: left;
-   padding: 30px;
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
   
    line-height: 1.6em; 
 }
@@ -81,7 +73,7 @@ ul.albuns img {
     border-radius: 8px;
 }
 
-section#last {
+section.last {
     height: 300px;
     margin-bottom: 90px;
 }
@@ -95,6 +87,10 @@ section ul li:hover {
 }
 
 /* Animações 
+
+header {
+    animation: fromTop .7s .2s backwards;
+}
 
 main section {
     animation: fromBottom .7s backwards;
@@ -132,12 +128,8 @@ main section:nth-child(3) {
         opacity: 0;
         transform: translateY(0);
     }
-} */
-}
+} 
+*/ 
 
 
-@media screen and (min-width: 998px) {
-    main section {
-        width: 700px;
-    }
-}
+ 
