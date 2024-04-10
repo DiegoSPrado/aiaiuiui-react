@@ -1,13 +1,20 @@
+import Modals from "./modal/Modals"
+
+
 export default function ListItens(props) {
     return (
-        <li>
-            <a target="_blank" rel="noreferrer" href={props.url}
-            > 
+       <>
+       <li onClick={() => console.log(`Você clicou!`)}>
+            
            <img
                 src={props.ImageInt} 
                 alt={props.alt}
                 />
-            </a>
+           
         </li>
+        <Modals isOpen={true}/>
+        </>
+        
+
     )
 }
