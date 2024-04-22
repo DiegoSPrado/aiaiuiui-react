@@ -2,11 +2,22 @@ import './App.css';
 import Header from './components/Header';
 import Section from './components/Section';
 import ListItens from './components/ListItens';
+import Modals from './components/modal/Modals';
 
+ 
 
-
-
-
+const albumResenha = [
+  {
+      id: 0,
+      titAlbum:"Blond",
+      resenha:"Teste",
+  },
+  {
+      id:1,
+      titAlbum:"Igor",
+      resenha:"Cu",
+  }
+]
 
 const artistList = [
   {
@@ -112,6 +123,16 @@ function App() {
           )
         })
        }
+       {
+            albumResenha.map(function(item){
+                return (
+                    <Modals isOpen={openModal}
+                        titAlbum={item.titAlbum}
+                    />
+                )
+            }
+        )
+        }
         </Section>
 
        
